@@ -11,9 +11,9 @@ abstract class Expr {
     }
     static class Binary extends Expr {
         Binary(Expr left, Token operator, Expr right) {
-        this.left = left;
-        this.operator = operator;
-        this.right = right;
+            this.left = left;
+            this.operator = operator;
+            this.right = right;
         }
 
         @Override
@@ -51,8 +51,8 @@ abstract class Expr {
     }
     static class Unary extends Expr {
         Unary(Token operator, Expr right) {
-        this.operator = operator;
-        this.right = right;
+            this.operator = operator;
+            this.right = right;
         }
 
         @Override
